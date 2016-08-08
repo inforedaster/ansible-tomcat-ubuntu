@@ -1,0 +1,11 @@
+---
+# This playbook deploys a simple standalone Tomcat 7 server.
+
+- hosts: tomcat-servers
+  remote_user: devops
+  become: yes
+  become_method: sudo
+
+  roles:
+  #  - selinux il faut le mettre à jour pour que ça soit compatible avec le systeme installé
+    - tomcat
