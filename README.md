@@ -1,4 +1,4 @@
-## Standalone Tomcat Deployment
+## Standalone Tomcat Deployment to ubuntu Os
 
 - Requires Ansible 1.2 or newer
 - Expects Ubuntu hosts

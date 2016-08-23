@@ -7,5 +7,5 @@
   become_method: sudo
 
   roles:
-  #  - selinux il faut le mettre à jour pour que ça soit compatible avec le systeme installé
+  #  - selinux must be updated to be conform with os version
     - tomcat
