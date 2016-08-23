@@ -1,6 +1,6 @@
 ---
 - name: Install Java 1.8
-  apt: name=openjdk-8-jre state=present
+  apt: name=openjdk-8-jdk state=present
 
 - name: add group "tomcat"
   group: name=tomcat
