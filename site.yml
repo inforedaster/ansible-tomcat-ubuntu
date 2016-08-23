@@ -7,5 +7,5 @@
   become_method: sudo
 
   roles:
-  #  - selinux must be updated to be conform with os version
+
     - tomcat
