@@ -2,6 +2,7 @@
 
 - Requires Ansible 1.2 or newer
 - Expects Ubuntu hosts
+- Install Openjdk 1.8
 
 These playbooks deploy a very basic implementation of Tomcat Application Server,
 version 7. To use them, first edit the "hosts" inventory file to contain the
