@@ -1,5 +1,5 @@
 ---
-# This playbook deploys a simple standalone Tomcat 7 server.
+# This playbook deploys a simple standalone Tomcat N with JDK N.
 
 - hosts: tomcat-servers
   remote_user: root
@@ -7,5 +7,5 @@
   become_method: sudo
 
   roles:
-
+  
     - tomcat
