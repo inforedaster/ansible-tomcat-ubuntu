@@ -5,8 +5,7 @@
   remote_user: root
   become: yes
   become_method: sudo
-
-  roles:
   
+  roles:  
     - { role: tomcat7, when: version == '7' }
     - { role: tomcat8, when: version == '8' }
