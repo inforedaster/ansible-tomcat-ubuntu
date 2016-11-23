@@ -1,5 +1,5 @@
 ---
-# This playbook deploys a simple standalone Tomcat N with JDK 8.
+# This playbook deploys a simple standalone Tomcat N with JDK 8.  
 
 - hosts: tomcat-servers
   remote_user: root
