@@ -1,5 +1,5 @@
 ---
-# This playbook deploys a simple standalone Tomcat N with JDK N.
+# This playbook deploys a simple standalone Tomcat N with JDK 8.
 
 - hosts: tomcat-servers
   remote_user: root
@@ -8,4 +8,5 @@
 
   roles:
   
-    - tomcat
+    - { role: tomcat7, when: version == '7' }
+    - { role: tomcat8, when: version == '8' }
