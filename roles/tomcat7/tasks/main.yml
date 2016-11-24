@@ -23,7 +23,7 @@
   file: path=/usr/share/tomcat/ owner=tomcat group=tomcat state=directory recurse=yes
 
 - name: Configure Tomcat server
-  template: src=tomcat7/server.xml dest=/usr/share/tomcat/conf/
+  template: src=server.xml dest=/usr/share/tomcat/conf/
   notify: restart tomcat
 
 - name: Configure Tomcat users
