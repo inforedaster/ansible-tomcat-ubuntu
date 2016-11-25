@@ -1,6 +1,6 @@
 ---
-- name: restart tomcat
-  service: name=tomcat state=restarted
+- name: tomcat-8-restart
+  service: name=tomcat8 state=restarted
 
 - name: restart iptables
   service: name=iptables state=restarted
