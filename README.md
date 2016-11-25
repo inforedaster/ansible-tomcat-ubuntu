@@ -3,16 +3,23 @@
 - Requires Ansible 1.2 or newer
 - Expects Ubuntu hosts
 - Install Openjdk 1.8
+- Install Tomcat7 or 8
 
 These playbooks deploy a very basic implementation of Tomcat Application Server,
-version 7. To use them, first edit the "hosts" inventory file to contain the
+version 7 or 8. To use them, first edit the "hosts" inventory file to contain the
 hostnames of the machines on which you want Tomcat deployed, and edit the
 group_vars/tomcat-servers file to set any Tomcat configuration parameters you need.
 
 Then run the playbook, like this:
 
-	ansible-playbook -i hosts site.yml
+For Tomcat7 :
 
+	ansible-playbook -i hosts site.yml --extra-vars "version=7"
+
+For Tomcat8 :
+
+	ansible-playbook -i hosts site.yml --extra-vars "version=7"
+	
 When the playbook run completes, you should be able to see the Tomcat
 Application Server running on the ports you chose, on the target machines.
 
@@ -28,3 +35,5 @@ Here are some ideas for ways that these playbooks could be extended:
 
 We would love to see contributions and improvements, so please fork this
 repository on GitHub and send us your changes via pull requests.
+
+@Inforedaster
