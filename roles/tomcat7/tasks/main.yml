@@ -33,6 +33,9 @@
 - name: Install Tomcat init script
   copy: src=tomcat-initscript.sh dest=/etc/init.d/tomcat mode=0755
 
+- name: systemd daemon-reload
+  shell: systemctl daemon-reload
+
 - name: Start Tomcat
   service: name=tomcat state=started enabled=yes
 
