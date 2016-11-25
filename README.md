@@ -18,7 +18,7 @@ For Tomcat7 :
 
 For Tomcat8 :
 
-	ansible-playbook -i hosts site.yml --extra-vars "version=7"
+	ansible-playbook -i hosts site.yml --extra-vars "version=8"
 	
 When the playbook run completes, you should be able to see the Tomcat
 Application Server running on the ports you chose, on the target machines.
